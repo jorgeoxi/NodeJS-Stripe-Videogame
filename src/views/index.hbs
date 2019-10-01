@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <img src="linksawakening.jpg" alt="Videojuego" class="card-img-top">
+            <div class="card-body">
+                <h2>$60 USD</h2>
+                <p>
+                    The Legend of Zelda: Link's Awakening
+                </p>
+            </div>
+            <div class="card-footer">
+
+                <form action="/checkout" method="POST">
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="<API HERE>"
+                        data-amount="6000"
+                        data-name="Videogames"
+                        data-description="Juego Físico"
+                        data-image="/jorgeoxi.jpg"
+                        data-locale="auto">
+                    </script>
+                <script>
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none'
+                </script>
+                <button class="btn btn-danger btn-block">
+                    BUY! <i class="fas fa-shopping-cart"></i>
+                </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
